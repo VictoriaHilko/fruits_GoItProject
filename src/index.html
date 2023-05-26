@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Fresh Harvest Box</title>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <load src="./partials/header.html" />
+    <main>
+      <load src="./partials/hero.html" />
+      <load src="./partials/order.html" />
+      <load src="./partials/organic-fruits.html" />
+      <load src="./partials/fresh-box.html" />
+    </main>
+    <load src="./partials/footer.html" />
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="/main.js"></script>
+    <!-- Scripts JS -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/go-up.js"></script>
+    <script type="module" src="scripts/modal-window.js"></script>
+    <script type="module" src="scripts/scroll-up.js"></script>
+    <script type="module" src="scripts/fresh-box.js"></script>
+    <script defer src="scripts/mobile-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+    
   </body>
 </html>
